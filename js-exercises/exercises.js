@@ -35,8 +35,7 @@ function primeNum(n) {
 	}
 	return true;
 }
-
-//5. Print the first "n" prime numbers
+//5. Print all prime numbers that are < n
 function printPrime(n) {
 	function primeNumero(m) {
 	for (j = 2; j < m; j++) {
