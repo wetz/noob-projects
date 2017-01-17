@@ -1,0 +1,5 @@
+* Dec to Bin/Hex/Oct converter
+* Imperial to Metric converter
+* ToDo application
+* Calculator
+* Stopwatch
