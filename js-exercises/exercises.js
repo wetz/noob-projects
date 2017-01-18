@@ -48,3 +48,14 @@ function printPrime(n) {
 		else if (primeNumero(i)) {console.log(i);}
 	}
 }
+// 6. Convert a decimal number into it's binar/hexadecimal/octal version
+function convertDecimal(n){
+	var dec = "";
+	while(n>=1){
+		if(parseInt(n, 10) % 2 == 0){
+			dec += 0; }
+		else dec += 1;
+		n = parseInt(n, 10) / 2;
+    }
+	return parseInt(dec.split("").reverse().join(""), 10);
+}
