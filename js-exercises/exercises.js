@@ -48,7 +48,9 @@ function printPrime(n) {
 		else if (primeNumero(i)) {console.log(i);}
 	}
 }
-// 6. Convert a decimal number into it's binar/hexadecimal/octal version
+// 6. Convert a decimal number into it's binary/hexadecimal/octal version
+/* My own solution after about 30 minutes of tinkering and then found a better method on the web. Didn't know of .toString(). Coding the whole thing without using any builtin javascript functions could be fun. Maybe.
+
 function convertDecimal(n){
 	var dec = "";
 	while(n>=1){
@@ -59,3 +61,4 @@ function convertDecimal(n){
     }
 	return parseInt(dec.split("").reverse().join(""), 10);
 }
+*/
