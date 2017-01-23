@@ -68,3 +68,7 @@ function convertDecimal(n, m){
   else if (m == 16) return parseInt(n.toString(16), 10);
   else console.log("Try again.");
 }
+// Convert between some of the more commonly used measurement units
+function convertUnits(value, unit){
+  
+}
