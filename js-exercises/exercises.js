@@ -69,6 +69,23 @@ function convertDecimal(n, m){
   else console.log("Try again.");
 }
 // Convert between some of the more commonly used measurement units
-function convertUnits(value, unit){
-  
+function convertUnits(unit, value){
+  if (unit == "inch") return value * 2.54 + " centimetres";
+  else if (unit == "foot") return value * 30.48 + " centimetres";
+  else if (unit == "yard") return value * 0.91 + " metres";
+  else if (unit == "mile") return value * 1.6 + " kilometres";
+  else if (unit == "league") return value * 4.82 + " kilometres";
+  else if (unit == "nautical mile") return value * 1.85 + " kilometres";
+  else if (unit == "acre") return value * 0.4 + " hectares";
+  else if (unit == "ounce") return value * 28.41 + " mililitres";
+  else if (unit == "pint") return value * 0.56 + " litres";
+  else if (unit == "pound") return value * 0.45 + " kilograms";
+  else if (unit == "centimeter") return value / 2.54 + " inches";
+  else if (unit == "meter") return value / 0.91 + " yards";
+  else if (unit == "kilometer") return value / 1.6 + " miles " + value / 4.82 + " leagues " + value / 1.85 + " nautical miles";
+  else if (unit == "hectare") return value / 0.4 + " acres";
+  else if (unit == "mililitre") return value / 28.41 + " ounces";
+  else if (unit == "litre") return value / 0.56 + " pints";
+  else if (unit == "kilogram") return value / 0.45 + " pounds";
+  else console.log("Try another unit.");
 }
