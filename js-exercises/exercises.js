@@ -1,6 +1,11 @@
+/*****************************************************************************
+Solutions to programming challenges written in Javascript. Some of those challenges are my own idea but many are taken from the web.
+I will try to make this file as readable and easy to use as posible.
+
+By: Kristijan Banovec, https://github.com/wetz
+*****************************************************************************/
 // 1. FizzBuzz
 function FizzBuzz() {
- for (var i = 1; i <= 15; i++){
      if(i % 15 == 0) console.log("FizzBuzz");
         else if(i % 5 == 0) console.log("Buzz");
         else if(i % 3 == 0) console.log("Fizz");
@@ -68,7 +73,8 @@ function convertDecimal(n, m){
   else if (m == 16) return parseInt(n.toString(16), 10);
   else console.log("Try again.");
 }
-// Convert between some of the more commonly used measurement units
+//7. Convert between some of the more commonly used measurement units
+// Gonna have to test this a lot more later
 function convertUnits(unit, value){
   if (unit == "inch") return value * 2.54 + " centimetres";
   else if (unit == "foot") return value * 30.48 + " centimetres";
@@ -88,4 +94,8 @@ function convertUnits(unit, value){
   else if (unit == "litre") return value / 0.56 + " pints";
   else if (unit == "kilogram") return value / 0.45 + " pounds";
   else console.log("Try another unit.");
+}
+//8. Reverse a string
+function reverseString(){
+
 }
