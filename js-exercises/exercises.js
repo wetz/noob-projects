@@ -10,7 +10,6 @@ function FizzBuzz() {
         else if(i % 5 == 0) console.log("Buzz");
         else if(i % 3 == 0) console.log("Fizz");
     else console.log(i);
-       }
 }
 // 2. Add the numbers from 1 to n together and return the result.
 function addNum(n){
@@ -96,6 +95,11 @@ function convertUnits(unit, value){
   else console.log("Try another unit.");
 }
 //8. Reverse a string
-function reverseString(){
-
+function reverseString(str){
+  var revStr = "", index = str.length;
+  while (index > 0){
+    revStr += str.charAt(index - 1);
+    index --;
+  }
+  return revStr;
 }
