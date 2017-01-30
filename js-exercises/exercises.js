@@ -103,3 +103,20 @@ function reverseString(str){
   }
   return revStr;
 }
+//9. Count Vowels
+function countVowels(str){
+  var vowels = 0;
+  for (i = 0; i < str.length; i++){
+    if(str.charAt(i) == "A"/*|| "a" || "E" || "e" || "I" || "i" || "O" || "o" || "U" || "u"*/) vowels += 1;
+    else if (str.charAt(i) == "a") vowels += 1;
+    else if (str.charAt(i) == "E") vowels += 1;
+    else if (str.charAt(i) == "e") vowels += 1;
+    else if (str.charAt(i) == "I") vowels += 1;
+    else if (str.charAt(i) == "i") vowels += 1;
+    else if (str.charAt(i) == "O") vowels += 1;
+    else if (str.charAt(i) == "o") vowels += 1;
+    else if (str.charAt(i) == "U") vowels += 1;
+    else if (str.charAt(i) == "u") vowels += 1;
+    }
+  return vowels;
+}
