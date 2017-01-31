@@ -120,3 +120,8 @@ function countVowels(str){
     }
   return vowels;
 }
+// 10. Check if Palindrome
+function palindromeCheck(str){
+  if (reverseString(str) == str) return true;
+  else return false;
+}
