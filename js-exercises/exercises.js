@@ -125,3 +125,15 @@ function palindromeCheck(str){
   if (reverseString(str) == str) return true;
   else return false;
 }
+// 11. Count words in a string
+function countWords(str){
+  var words = 1;
+  for (i = 0; i < str.length; i++){
+    if (str.charAt(i) == " ") words += 1;
+  }
+  if (str.charAt(0) == " ") words -= 1; // this checks if there is a single
+  // space before
+  if (str.charAt(str.length - 1) == " ") words -= 1; // or after the word(s)
+  return words;
+} // however if there is more then one empty space the program's output isn't
+// correct - should work on that later
