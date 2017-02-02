@@ -4,7 +4,9 @@ I will try to make this file as readable and easy to use as posible.
 
 By: Kristijan Banovec, https://github.com/wetz
 *****************************************************************************/
-// 1. FizzBuzz
+// 1. FizzBuzz - Print the numbers from 1 to n but instead all
+//  multiples of 3 print "Fizz", for multiples of 5 print "Buzz"
+// and for multiples of both numbers print "FizzBuzz".
 function FizzBuzz(n) {
   for(i = 1; i <= n; i++){
      if(i % 15 == 0) console.log("FizzBuzz");
@@ -15,11 +17,11 @@ function FizzBuzz(n) {
 }
 // 2. Add the numbers from 1 to n together and return the result.
 function addNum(n){
-	var j = 0;
+	var result = 0;
 	for (var i = 0; i <= n; i++) {
-		j+=i;
+		result += i;
 		}
-	return j;
+	return result;
 }
 //3. Write a program that checks if a number is in the Fibonacci sequence
 function fib(n) {
