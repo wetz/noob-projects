@@ -1,12 +1,11 @@
-/*****************************************************************************
+/*
 Solutions to programming challenges written in Javascript. Some of those challenges are my own idea but many are taken from the web.
 I will try to make this file as readable and easy to use as posible.
 
 By: Kristijan Banovec, https://github.com/wetz
-*****************************************************************************/
-// 1. FizzBuzz - Print the numbers from 1 to n but instead all
-//  multiples of 3 print "Fizz", for multiples of 5 print "Buzz"
-// and for multiples of both numbers print "FizzBuzz".
+*/
+
+// 1. FizzBuzz - Print the numbers from 1 to n but instead of the // numbers that are multiples of 3 print "Fizz", for multiples of 5 // print "Buzz" and for multiples of both 3 and 5 print "FizzBuzz".
 function FizzBuzz(n) {
   for(i = 1; i <= n; i++){
      if(i % 15 == 0) console.log("FizzBuzz");
@@ -15,7 +14,7 @@ function FizzBuzz(n) {
     else console.log(i);
   }
 }
-// 2. Add the numbers from 1 to n together and return the result.
+// 2. Return the sum of all numbers from 1 to n.
 function addNum(n){
 	var result = 0;
 	for (var i = 0; i <= n; i++) {
@@ -23,7 +22,8 @@ function addNum(n){
 		}
 	return result;
 }
-//3. Write a program that checks if a number is in the Fibonacci sequence
+//3. Write a program that checks if a number is in the Fibonacci
+// sequence
 function fib(n) {
 	var a = 1;
 	var b = 2;
