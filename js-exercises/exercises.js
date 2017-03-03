@@ -25,7 +25,7 @@ function addNum(n){
 }
 //3. Write a program that checks if a number is in the Fibonacci
 // sequence
-function fib(n) {
+function isFibonacci(n) {
 	var a = 1;
 	var b = 2;
 	while(b <= n) {
@@ -36,9 +36,8 @@ function fib(n) {
 	return false;
 }
 //4. Check if n is a prime number
-function primeNum(n) {
-	if (n < 1) {return false;}
-	else if (n === 1) {return false;}
+function isPrime(n) {
+	if (n <= 2) {return false;}
 	for (i = 2; i < n; i++) {
 		 if (n % i === 0) {return false;}
 	}
