@@ -57,7 +57,7 @@ function printPrime(n) {
 	}
 }
 // 6. Convert a decimal number into it's binary/hexadecimal/octal version
-/* My own solution - to the decimal to binary part only! - after about 30 minutes of tinkering and then found a better method on the web. Didn't know of .toString(). Coding the whole thing without using any builtin javascript functions could be fun. Maybe.
+/* My own solution - to the decimal-to-binary part only! - after about 30 minutes of tinkering and then found a better method on the web. Didn't know of .toString(). Coding the whole thing without using any builtin javascript functions could be fun. Maybe.
 
 function convertDecimal(n){
 	var dec = "";
@@ -114,17 +114,42 @@ function reverseString(str){
 function countVowels(str){
   var vowels = 0;
   for (i = 0; i < str.length; i++){
-    if(str.charAt(i) === "A"/*|| "a" || "E" || "e" || "I" || "i" || "O" || "o" || "U" || "u"*/) vowels += 1;
-    else if (str.charAt(i) === "a") vowels += 1;
-    else if (str.charAt(i) === "E") vowels += 1;
-    else if (str.charAt(i) === "e") vowels += 1;
-    else if (str.charAt(i) === "I") vowels += 1;
-    else if (str.charAt(i) === "i") vowels += 1;
-    else if (str.charAt(i) === "O") vowels += 1;
-    else if (str.charAt(i) === "o") vowels += 1;
-    else if (str.charAt(i) === "U") vowels += 1;
-    else if (str.charAt(i) === "u") vowels += 1;
+    function addVowels(){
+      vowels += 1;
     }
+    switch (str.charAt(i)){
+      case "A":
+        addVowels();
+        break;
+      case "a":
+        addVowels();
+        break;
+      case "E":
+        addVowels();
+        break;
+      case "e":
+        addVowels();
+        break;
+      case "I":
+        addVowels();
+        break;
+      case "i":
+        addVowels();
+        break;
+      case "O":
+        addVowels();
+        break;
+      case "o":
+        addVowels();
+        break;
+      case "U":
+        addVowels();
+        break;
+      case "u":
+        addVowels();
+        break;
+    }
+  }
   return vowels;
 }
 // 10. Check if Palindrome
