@@ -1,5 +1,5 @@
 /*
-Solutions to programming challenges written in Javascript. Some of those challenges are my own idea but many are taken from the web.
+Solutions to programming challenges written in Javascript. Some of those challenges are my own idea but many are taken from the web. All solutions are mine.
 I will try to make this file as readable and easy to use as posible.
 
 By: Kristijan Banovec, https://github.com/wetz
@@ -109,7 +109,7 @@ function reverseString(str){
   return revStr;
 }
 //9. Count Vowels
-// For the sake of simplicity i will only consider the bellow used
+// For the sake of simplicity I will only consider the bellow used
 // characters as vowels, no y (as in "why", "cry" etc.)
 function countVowels(str){
   var vowels = 0;
